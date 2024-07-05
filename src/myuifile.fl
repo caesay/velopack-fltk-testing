@@ -1,0 +1,29 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0400
+i18n_type 1
+i18n_include {<libintl.h>}
+i18n_conditional {}
+i18n_function gettext
+i18n_static_function gettext_noop
+header_name {.h}
+code_name {.cxx}
+class UserInterface {open
+} {
+  Function {make_window()} {open
+  } {
+    Fl_Window {} {open
+      xywh {2211 573 600 600} type Double color 7 visible
+    } {
+      Fl_Flex root {open
+        xywh {0 0 600 665} set_size_tuples {1  1 50 }
+      } {
+        Fl_Flex {} {open
+          xywh {0 0 600 615} resizable
+        } {}
+        Fl_Flex button_group {open
+          xywh {0 615 600 50} type HORIZONTAL box FLAT_BOX color 123
+        } {}
+      }
+    }
+  }
+}
